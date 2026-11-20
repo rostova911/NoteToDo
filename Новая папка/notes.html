@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="icon" href="sticky-notes.png">
+    <link rel="stylesheet" href="notes.css">
+    <script src="notes.js" defer></script>
+</head>
+<body>
+
+<main>
+    <div class="note_app">  
+
+        <h2>Заметки <img src="sticky-notes.png" width="25px" alt=""></h2>
+        
+        <label for="display">
+            <input id="display" class="note_app_display" type="text" placeholder="Напишите задачу...">
+            <button class="note_app_add_btn">+Add</button>
+        </label>
+       
+        <div class="note_app_main_ul">
+            <ul class="ul">
+                <!-- <li class="checked">задача чек <img class="remove_btn" src="bin.png"></li>
+                <li>задача</li> -->
+            </ul>
+    
+            <p class="default_hint ">Заметок пока нет...</p>
+            <p class="scorebar_p"> Выполнено : <span class="count_tasks "> 0/0 </span></p>      
+        </div>
+
+    </div>  
+</main>
+
+
+</body>
+</html>
