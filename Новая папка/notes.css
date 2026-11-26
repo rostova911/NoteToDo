@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body{
@@ -35,7 +35,7 @@ label{
     align-items: center;
     border-radius: 30px;
     background-color: rgb(232, 232, 232);
-
+    margin-bottom: 5px;
 }
 
 .note_app_display{
@@ -65,10 +65,12 @@ ul{
 }
 
 li{
-    padding: 15px 32px 12px 43px;
+    padding: 0px 0px 0px 42px;
     position: relative;
     border-bottom: 1px solid black;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     overflow-wrap: break-word;
     white-space: normal;
 }
@@ -99,10 +101,14 @@ li::before{
     padding: 1px;
 }
 
+.div_remove_btn{
+  width: 22px;
+  padding: 10px 20px;
+
+}
+
 .remove_btn{
-    position: absolute;
-    width: 18px;
-    right: 7px;
+  width: 100%;
 }
 
 .remove_btn:hover{

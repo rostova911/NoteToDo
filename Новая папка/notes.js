@@ -55,10 +55,13 @@ function renderTasks() {
 
         li.textContent = task.text;               //вместо innerHTML чтобы не вставился случайный код
         
+        const div = document.createElement('div');
+        div.classList.add('div_remove_btn');
+        li.appendChild(div);
         const img = document.createElement('img');     // Создаём картинку
         img.classList.add('remove_btn');
         img.src = 'bin.png';
-        li.appendChild(img);
+        div.appendChild(img);
 
         if (task.completed) {
             li.classList.add('checked');
